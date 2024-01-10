@@ -1,0 +1,101 @@
+.navbarCa {
+    background: black;
+    height: 64px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.menu_items {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+}
+
+.home,
+.about,
+.services,
+.contact,
+.singup {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.singup {
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+
+.menu_items li:hover {
+    border-bottom: 2px solid yellow;
+}
+
+.navabr-toggle-menu {
+    display: none;
+}
+
+@media(max-width: 1000px) {
+
+    .home,
+    .about,
+    .services,
+    .contact,
+    .singup {
+        font-size: 15px;
+        padding: 5px 15px;
+        margin: 0 7px;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .home,
+    .about,
+    .services,
+    .contact,
+    .singup {
+        font-size: 12px;
+        padding: 5px 12px;
+        margin: 0 5px;
+    }
+}
+
+@media(max-width: 570px) {
+    .menu_items {
+        display: none;
+    }
+
+    .nav-links-mobail {
+        position: absolute;
+        display: block;
+        background: black;
+        left: 0;
+        top: 64px;
+        transition: all 1s ease-out;
+        width: 100%;
+    }
+    .home,
+    .about,
+    .services,
+    .contact,
+    .singup {
+       text-align: center;
+       padding: 20px;
+       width: 100%;
+       transition: all 1s ease;
+    }
+    .singup{
+        border: none;
+    }
+    .navabr-toggle-menu{
+        display: block;
+        font-size: 25px;
+        background-color: yellow;
+        padding: 5px;
+        color: black;
+    }
+}
